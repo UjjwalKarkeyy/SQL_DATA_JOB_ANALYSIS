@@ -6,15 +6,21 @@ QUESTION: What are the top-paying data analyst jobs?
 */
 
 SELECT
+    jpf.job_id,
     jpf.job_title,
-    ROUND(AVG(jpf.salary_year_avg), 2) AS avg_yearly_salary
+    company_dim.name AS company,
+    jpf.job_location,
+    jpf.salary_year_avg
 FROM job_postings_fact AS jpf
+LEFT JOIN
+    company_dim
+ON
+    jpf.company_id = company_dim.company_id
 WHERE
-    jpf.salary_year_avg IS NOT NULL AND
-    jpf.job_title LIKE '%Data%Analyst%'
-GROUP BY
-    jpf.job_title
+    jpf.salary_year_avg IS NOT NULL
+        AND
+    jpf.job_title LIKE '%Data%Analyst%' 
 ORDER BY
-    avg_yearly_salary DESC
+    jpf.salary_year_avg DESC
 LIMIT 10;
 

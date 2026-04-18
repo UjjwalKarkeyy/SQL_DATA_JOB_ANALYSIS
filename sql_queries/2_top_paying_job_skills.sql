@@ -49,6 +49,18 @@ GROUP BY
     job_skill_tab.job_title,
     job_skill_tab.salary_year_avg;
 
+/*
+INSIGHTS:
+
+1. Core Skills (must-have)
+Python + SQL + (optional R)
+
+2. System Skills (to stand out)
+AWS + Data pipelines + Backend thinking
+
+3. Ecosystem Skills (to become “job-ready”)
+Databases + Visualization + Big Data tools
+*/
 
 
     

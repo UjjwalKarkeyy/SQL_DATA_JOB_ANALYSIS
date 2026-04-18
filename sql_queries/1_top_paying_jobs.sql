@@ -24,3 +24,20 @@ ORDER BY
     jpf.salary_year_avg DESC
 LIMIT 10;
 
+/*
+INSIGHTS:
+
+The top-paying Data Analyst jobs are usually not basic dashboard/reporting roles.
+
+They tend to reward people who combine:
+
+analytics ability,
+senior-level experience,
+domain specialization,
+and often technical depth.
+
+So the real market signal is:
+
+To move into higher-paying analyst roles, becoming “just good at Excel/SQL” is not enough.
+You need to become a specialized analyst with deeper business or technical value.
+*/
